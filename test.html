@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>واجهة SkyTech Programming</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        h2 {
+            color: #5a2b84;
+            margin-top: 20px;
+            font-weight: 700;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .tab {
+            margin: 0 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .tab:hover {
+            transform: scale(1.1);
+            color: #3a1854;
+        }
+
+        .tab i {
+            font-size: 50px;
+            color: #5a2b84;
+            transition: color 0.3s;
+        }
+
+        .tab:hover i {
+            color: #3a1854;
+        }
+
+        .tab-title {
+            display: block;
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #5a2b84;
+            transition: color 0.3s;
+        }
+
+        .tab:hover .tab-title {
+            color: #3a1854;
+        }
+
+        .tab-content {
+            margin-top: 30px;
+            display: none;
+            font-size: 18px;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h2>عن SkyTech Programming</h2>
+   
+    <div class="tabs">
+        <div class="tab" onclick="showContent('about')">
+            <i class="fas fa-laptop-code"></i>
+            <span class="tab-title">عن SkyTech</span>
+        </div>
+        <div class="tab" onclick="showContent('vision')">
+            <i class="fas fa-lightbulb"></i>
+            <span class="tab-title">رؤيتنا</span>
+        </div>
+        <div class="tab" onclick="showContent('values')">
+            <i class="fas fa-cogs"></i>
+            <span class="tab-title">قيّمنا</span>
+        </div>
+        <div class="tab" onclick="showContent('message')">
+            <i class="fas fa-code"></i>
+            <span class="tab-title">رسالتنا</span>
+        </div>
+    </div>
+
+    <div id="about" class="tab-content">
+        <p>تهدف SkyTech Programming إلى تقديم حلول برمجية مبتكرة لتمكين الأفراد والشركات من تحقيق أهدافهم التقنية بكفاءة.</p>
+    </div>
+    <div id="vision" class="tab-content">
+        <p>أن نصبح المزود الرائد للحلول البرمجية الحديثة على المستويين المحلي والإقليمي.</p>
+    </div>
+    <div id="values" class="tab-content">
+        <ul>
+            <li>الابتكار</li>
+            <li>الجودة</li>
+            <li>الاحترافية</li>
+            <li>الشفافية</li>
+        </ul>
+    </div>
+    <div id="message" class="tab-content">
+        <p>مهمتنا هي تقديم حلول برمجية مبتكرة ومخصصة لدعم نجاح عملائنا وتعزيز حضورهم الرقمي.</p>
+    </div>
+
+    <script>
+       
+    </script>
+</body>
+</html>

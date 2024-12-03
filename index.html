@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SkyTech Programming: نوفر حلول برمجية مبتكرة، تصميم مواقع احترافي، وتطبيقات متجاوبة تلبي احتياجات أعمالك.">
+    <meta name="keywords" content="SkyTech Programming, برمجة, تصميم مواقع, تطوير تطبيقات, حلول برمجية, تقنيات حديثة, دعم الأعمال, مواقع متجاوبة">
+    <meta name="author" content="SkyTech Programming Team">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="ar">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    <title>SkyTech Programming</title>
+    <!-- روابط CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600&family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<style>
+
+
+/* تخصيص الـ ID داخل الهيدر */
+#custom-header-item {
+    background-color: rgb(255, 255, 255);
+}
+body {
+        font-family: 'Tajawal', sans-serif;
+        line-height: 1.6;
+        font-size: 16px;
+    }
+
+    /* تعيين الخط للعناوين */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Cairo', sans-serif;
+        font-weight: 600;
+    }
+</style>
+<body>
+    <!-- رأس الصفحة -->
+    <header id="custom-header-item" >
+        <div class="container" >
+            <!-- شعار الشركة -->
+            <div class="logo" >
+                <a href="#"><img src="img/logo.png" alt="SkyTech Programming Logo"></a>
+            </div>  
+            <!-- القائمة الرئيسية -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero">الرئيسية</a></li>
+                    <li><a href="#about">حولنا</a></li>
+                    <li><a href="#services">خدماتنا</a></li>
+                    <li><a href="#projects">أعمالنا</a></li>
+                    <li><a href="#blog">المقالات</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>                
+                <!-- زر Toggle للأجهزة الصغيرة -->
+                <button class="toggle-btn"><i class="fas fa-bars"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- القسم البطل -->
+    <section id="hero">
+        <div class="hero-overlay">
+            <h1>مرحباً بكم في <span>SkyTech Programming</span></h1>
+            <p>نحو مستقبل تقني أفضل وحلول برمجية مبتكرة.</p>
+            <a href="#contact" class="btn-primary">تواصل معنا</a>
+        </div>
+    </section>
+
+    <!-- الأقسام الأخرى -->
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>حولنا</h2>
+                <div class="tabs">
+                    <div class="tab" onclick="showContent('about-Us')">
+                        <i class="fas fa-laptop-code"></i>
+                        <span class="tab-title">عن SkyTech</span>
+                    </div>
+                    <div class="tab" onclick="showContent('vision')">
+                        <i class="fas fa-lightbulb"></i>
+                        <span class="tab-title">رؤيتنا</span>
+                    </div>
+                    <div class="tab" onclick="showContent('values')">
+                        <i class="fas fa-cogs"></i>
+                        <span class="tab-title">قيّمنا</span>
+                    </div>
+                    <div class="tab" onclick="showContent('message')">
+                        <i class="fas fa-code"></i>
+                        <span class="tab-title">رسالتنا</span>
+                    </div>
+                </div>
+        
+                <div id="about-Us" class="tab-content">
+                    <p>نحن نسعى في إلى تمكين الأفراد والشركات من خلال تقديم حلول تقنية مبتكرة وفعالة تعزز الإنتاجية وتسهم في تحقيق أهدافهم. نؤمن بأن التكنولوجيا هي مفتاح النجاح في عالمنا المتغير</p>
+                </div>
+                <div id="vision" class="tab-content">
+                    <p>أن نصبح المزود الرائد للحلول البرمجية الحديثة على المستويين المحلي والإقليمي.</p>
+                </div>
+                <div id="values" class="tab-content">
+                    <ul>
+                        <li>الإبداع</li>
+                        <li>التميز</li>
+                        <li>الجودة</li>
+                        <li>الالتزام</li>
+                    </ul>
+                </div>
+                <div id="message" class="tab-content">
+                    <p>مهمتنا هي تقديم حلول برمجية مبتكرة ومخصصة لدعم نجاح عملائنا وتعزيز حضورهم الرقمي.</p>
+                </div>
+            </div>
+        </section>
+      
+        <section id="services">
+            <h2>خدماتنا</h2>
+            <br>
+            <div class="container">
+                <div class="service">
+                    <i class="fas fa-code"></i>
+                    <h3>تطوير مواقع الويب</h3>
+                    <p>نصمم ونطور مواقع متجاوبة وجذابة تلبي احتياجات عملائك وتوفر تجربة مستخدم متميزة.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-cogs"></i>
+                    <h3>تطوير الأنظمة</h3>
+                    <p>نقوم بتطوير أنظمة مخصصة لتحسين أداء الأعمال وتسهيل العمليات.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-tools"></i>
+                    <h3>حلول المشاكل البرمجية</h3>
+                    <p>نقدم حلول مبتكرة للمشاكل البرمجية لتحسين الكفاءة وتحقيق الأهداف التقنية.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-comments"></i>
+                    <h3>استشارات برمجية</h3>
+                    <p>نقدم استشارات فنية لمساعدتك في اتخاذ القرارات التقنية السليمة وتوجيهك نحو الحلول الأمثل.</p>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        <section id="projects">
+            <h2>أعمالنا</h2>
+              
+            <div class="container">
+                
+                <div class="project">
+                    <img src="img/project1.png" alt="مشروع 1">
+                    <p>موقع ادارة مستشفى </p>
+                </div>
+                <div class="project">
+                    <img src="img/project2.png" alt="مشروع 2">
+                    <p>منصة تعليم الحروف للطفال</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contact-container">
+                <h2>اتصل بنا</h2>
+                <p>يرجى ملء النموذج أدناه لمساعدتنا في تقديم أفضل الخدمات.</p>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">الاسم:</label>
+                            <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني:</label>
+                            <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">الرقم:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="أدخل رقم هاتفك">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">الموضوع:</label>
+                            <input type="text" id="subject" name="subject" placeholder="أدخل الموضوع">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group" style="flex: 1;">
+                            <label for="message">الرسالة:</label>
+                            <textarea id="message" name="message" placeholder="أدخل رسالتك" rows="4" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit">إرسال</button>
+                </form>
+            </div>
+        </section>
+                
+    </main>
+
+    
+    <!-- تذييل الصفحة -->
+<!-- تذييل الصفحة -->
+<footer>
+    <div class="footer-container">
+      <!-- معلومات الشركة -->
+      <div class="footer-info">
+        <h3>شركتنا</h3>
+        <p>نحن شركة متخصصة في تقديم حلول برمجية مبتكرة لتحسين أعمالك وزيادة الإنتاجية باستخدام أحدث التقنيات في مجال البرمجة والذكاء الاصطناعي.</p>
+        <p>&copy; 2024 شركتنا. جميع الحقوق محفوظة.</p>
+      </div>
+  
+      <!-- الروابط المهمة -->
+      <div class="footer-links">
+        <h3>روابط مهمة</h3>
+        <ul>
+          <li><a href="#about"><i class="fas fa-info-circle"></i> عن الشركة</a></li>
+          <li><a href="#services"><i class="fas fa-cogs"></i> خدماتنا</a></li>
+          <li><a href="#projects"><i class="fas fa-briefcase"></i> أعمالنا</a></li>
+          <li><a href="#contact"><i class="fas fa-phone-alt"></i> اتصل بنا</a></li>
+          <li><a href="#privacy-policy"><i class="fas fa-shield-alt"></i> سياسة الخصوصية</a></li>
+          <li><a href="#terms-of-service"><i class="fas fa-file-contract"></i> شروط الخدمة</a></li>
+        </ul>
+      </div>
+  
+      <!-- التواصل الاجتماعي -->
+      <div class="footer-social">
+        <h3>تابعنا على</h3>
+        <ul>
+          <li><a href="https://www.facebook.com" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i> فيسبوك</a></li>
+          <li><a href="https://www.twitter.com" target="_blank" class="social-icon twitter"><i class="fab fa-twitter"></i> تويتر</a></li>
+          <li><a href="https://www.linkedin.com" target="_blank" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i> لينكدإن</a></li>
+          <li><a href="https://www.instagram.com" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i> إنستغرام</a></li>
+          <li><a href="https://www.youtube.com" target="_blank" class="social-icon youtube"><i class="fab fa-youtube"></i> يوتيوب</a></li>
+        </ul>
+      </div>
+  
+      <!-- تفاصيل العنوان -->
+      <div class="footer-address">
+        <h3>تفاصيل الاتصال</h3>
+        <p><i class="fas fa-map-marker-alt"></i> الجمهورة اليمنية - صنعاء </p>
+        <p><i class="fas fa-phone-alt"></i> هاتف: +777 777 777</p>
+        <p><i class="fas fa-envelope"></i> بريد إلكتروني: contact@skytech.com</p>
+      </div>
+    </div>
+  </footer>
+
+    <!-- جافا سكريبت -->
+    <script src="js/script.js"></script>
+</body>
+</html>
